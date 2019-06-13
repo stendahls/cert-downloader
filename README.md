@@ -1,4 +1,4 @@
-# cert-downloader [![Build Status](https://travis-ci.org/evi-snowm/cert-downloader.svg?branch=develop)](https://travis-ci.org/evi-snowm/cert-downloader)
+# cert-downloader [![Build Status](https://travis-ci.org/stendahls/cert-downloader.svg?branch=develop)](https://travis-ci.org/stendahls/cert-downloader)
 
 This is a helper module that allows you to download an SSL certificate, by default that of Apple Inc..
 
@@ -7,14 +7,14 @@ Offered functionality:
 * Convert certificate to PEM format.
 * Validate a file against the certificate.
 
-More information and links to source code: [http://evi-snowm.github.io/cert-downloader/](http://evi-snowm.github.io/cert-downloader/)
+More information and links to source code: [https://github.com/stendahls/cert-downloader](https://github.com/stendahls/cert-downloader)
 
 **NOTE** OpenSSL or compatible must be installed on your system if you wish to use certificates in the PEM format.
 Without this tool, only the download function will work.
 
 ## Install
 ```sh
-$ npm install cert-downloader
+$ npm install stendahls/cert-downloader
 ```
 
 ## Usage
@@ -54,28 +54,28 @@ certDl.verify(file, function(error, output) {
   });
 ```
 
-##API
+## API
 
-###CertDownloader([options])
+### CertDownloader([options])
 Construct a new CertDownloader.
- 
+
 You will always need to call this first. `options` Overrides one or several defaults and should be in JSON format with any of the following options:
 
  * `certName`: name of the certificate (default is `AppleIncRootCertificate.cer`)
  * `url`     : URL to download the certificate from (default is `http://www.apple.com/appleca/AppleIncRootCertificate.cer`)
  * `cache`   : path to cache location (a.k.a. where to keep the certificates locally, by default this is the operating system's default directory for temp files)
 
-###cert(callback)
+### cert(callback)
 Retrieve the certificate.
 
 Attempts to download a missing certificate and returns the path to said certificate if available (either cached or downloaded). The callback gets two arguments (err, path), where path is a string to the location of the certificate.
 
-###pem(callback)
+### pem(callback)
 Retrieve the certificate in PEM format.
 
 Attempts to download and convert a missing certificate and returns the path to said certificate if available (either cached or converted). The callback gets two arguments (err, path), where path is a string to the location of the certificate.
 
-###verify(file, callback)
+### verify(file, callback)
 Verifies a file against the certificate.
 
 Attempts to download and convert a missing certificate and returns the content of the file if successfully verified. The callback gets two arguments (err, output), where output is the content of the file if successfully verified.
@@ -83,4 +83,4 @@ Attempts to download and convert a missing certificate and returns the content o
 
 ## License
 
-MIT © Patrick Londema
+MIT
