@@ -1,45 +1,23 @@
 {
-  "_args": [
-    [
-      "cert-downloader@0.2.1",
-      "/Users/oskar.risberg/repos/appcentral"
-    ]
+  "authors": [
+    {
+      "name": "P. Londema",
+      "email": "p.londema@service2media.com"
+    },
+    {
+      "name": "Oskar Risberg",
+      "email": "oskar.risberg@stendahls.se"
+    }
   ],
-  "_from": "cert-downloader@0.2.1",
-  "_id": "cert-downloader@0.2.1",
-  "_inBundle": false,
-  "_integrity": "sha1-JrAI0er5L7Mbw4a8Ck4nCWbpglE=",
-  "_location": "/cert-downloader",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cert-downloader@0.2.1",
-    "name": "cert-downloader",
-    "escapedName": "cert-downloader",
-    "rawSpec": "0.2.1",
-    "saveSpec": null,
-    "fetchSpec": "0.2.1"
-  },
-  "_requiredBy": [
-    "/provisioning"
-  ],
-  "_resolved": "https://registry.npmjs.org/cert-downloader/-/cert-downloader-0.2.1.tgz",
-  "_spec": "0.2.1",
-  "_where": "/Users/oskar.risberg/repos/appcentral",
-  "author": {
-    "name": "P. Londema",
-    "email": "p.londema@service2media.com"
-  },
   "bugs": {
-    "url": "https://github.com/evi-snowm/cert-downloader/issues"
+    "url": "https://github.com/stendahls/cert-downloader/issues"
   },
   "dependencies": {},
   "description": "(Apple) SSL certificate downloader",
   "devDependencies": {
     "mocha": "2.3.x"
   },
-  "homepage": "https://github.com/evi-snowm/cert-downloader",
+  "homepage": "https://github.com/stendahls/cert-downloader",
   "keywords": [
     "apple",
     "cer",
@@ -53,7 +31,7 @@
   "name": "cert-downloader",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evi-snowm/cert-downloader.git"
+    "url": "git+https://github.com/stendahls/cert-downloader.git"
   },
   "scripts": {
     "test": "mocha"
