@@ -15,7 +15,7 @@
   "dependencies": {},
   "description": "(Apple) SSL certificate downloader",
   "devDependencies": {
-    "mocha": "2.3.x"
+    "mocha": "10.2.x"
   },
   "homepage": "https://github.com/stendahls/cert-downloader",
   "keywords": [
